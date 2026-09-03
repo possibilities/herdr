@@ -1,0 +1,17 @@
+agentstate
+Copyright 2026 Mike Bannister
+
+This crate is built inside a fork of herdr (https://github.com/herdrdev/herdr),
+licensed under the Apache License, Version 2.0. It compiles the following
+herdr source files unmodified, by path, from the enclosing checkout:
+
+  src/detect/manifest.rs
+  src/detect/manifests/*.toml
+  src/pane/agent_detection.rs
+
+The `agentstate` shim modules (`config`, `detect/mod.rs`,
+`detect/manifest_update.rs`, `terminal.rs`), the `tracker` module, the
+command line, and the tests are original work in the herdx workshop
+(https://github.com/possibilities/herdx), also under Apache-2.0.
+`detect/manifest_update.rs` reproduces herdr's `ManifestVersion` type
+verbatim so version comparison keeps herdr's semantics.

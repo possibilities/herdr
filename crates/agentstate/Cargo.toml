@@ -1,0 +1,20 @@
+[package]
+name = "agentstate"
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+description = "Claude Code and Codex agent state detection extracted from herdr for agent development environments"
+publish = false
+
+# herdr's manifest.rs declares `#[cfg(test)] mod tests;`, which a path-included
+# module cannot resolve. Unit tests are therefore disabled for the library and
+# every test lives under tests/.
+[lib]
+test = false
+doctest = false
+
+[dependencies]
+regex = "1"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+toml = "0.8"
