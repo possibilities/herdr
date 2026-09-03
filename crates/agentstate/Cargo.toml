@@ -13,6 +13,11 @@ publish = false
 test = false
 doctest = false
 
+[[bin]]
+name = "agentstate"
+path = "src/main.rs"
+test = false
+
 [dependencies]
 regex = "1"
 serde = { version = "1", features = ["derive"] }

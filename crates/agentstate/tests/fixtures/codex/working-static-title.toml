@@ -1,0 +1,3 @@
+state = "working"
+rule = "screen_working_fallback"
+osc_title = "project"

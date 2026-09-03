@@ -1,0 +1,3 @@
+# Captured from Claude Code 2.1.251 (herdr issue #3414 fixture).
+state = "idle"
+rule = "live_prompt_box"
